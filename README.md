@@ -1,4 +1,4 @@
-# 🍔 FoodieExpress - Your Ultimate Food Delivery App
+# 🍔 EpicEats - Your Ultimate Food Delivery App
 
 FoodieExpress is a modern, user-friendly food delivery app designed to connect food enthusiasts with their favorite restaurants. Whether you're craving pizza, sushi, or vegan delights, FoodieExpress ensures a seamless ordering experience with real-time tracking and hassle-free payment options.
 
