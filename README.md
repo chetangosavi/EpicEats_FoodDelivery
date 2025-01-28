@@ -50,7 +50,7 @@ Follow these steps to set up the project locally:
 ---
 
 ## 📧 Contact
-For any inquiries or feedback, please email: chetangosavi81@gmail.com(mailto:chetangosavi81@gmail.com).
+For any inquiries or feedback, please email: chetangosavi81@gmail.com
 
 ---
 
