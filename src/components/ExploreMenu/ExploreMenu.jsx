@@ -1,7 +1,9 @@
 import "./ExploreMenu.css";
 import { menu_list } from "../../assets/assets";
+import PropTypes from "prop-types";
 
-const ExploreMenu = ({category,setCategory}) => {
+
+const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="explore-menu" id="explore-menu">
       <h1>Explore Our Menu</h1>
@@ -13,8 +15,20 @@ const ExploreMenu = ({category,setCategory}) => {
       <div className="explore-menu-list">
         {menu_list.map((item, index) => {
           return (
-            <div onClick={()=>setCategory(prev=>prev===item.menu_name?"All":item.menu_name)} className="explore-menu-list-item" key={item.id || index}>
-              <img className={category===item.menu_name?"active":""} src={item.menu_image} alt={item.menu_name}/>
+            <div
+              onClick={() =>
+                setCategory((prev) =>
+                  prev === item.menu_name ? "All" : item.menu_name
+                )
+              }
+              className="explore-menu-list-item"
+              key={item.id || index}
+            >
+              <img
+                className={category === item.menu_name ? "active" : ""}
+                src={item.menu_image}
+                alt={item.menu_name}
+              />
               <p>{item.menu_name}</p>
             </div>
           );
@@ -24,4 +38,10 @@ const ExploreMenu = ({category,setCategory}) => {
     </div>
   );
 };
+
+ExploreMenu.propTypes = {
+  category: PropTypes.string.isRequired,   // category should be a string
+  setCategory: PropTypes.func.isRequired,  // setCategory should be a function
+};
+
 export default ExploreMenu;
